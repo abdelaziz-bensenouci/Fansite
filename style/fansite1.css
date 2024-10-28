@@ -84,20 +84,10 @@ main{
     flex: 1; 
 }
 .contenaire_main{
-    background-image: url(img/zinedine/stade3-min.jpg);
+    background-image: url(../img/zinedine/stade2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-<<<<<<< Updated upstream:fansite1.css
-}
-.h1_zidane{
-    font-size: 48px;
-    text-align: center;       
-    font-family: "Pacifico", cursive;
-    margin: 0;
-    padding: 30px;
-}
-=======
 }
 .container_accueil{
     background-image: url(../img/zinedine/zinedine5.jpg);
@@ -125,7 +115,6 @@ main{
     font-size: 30px;
     transition: 0.5s;
 }
->>>>>>> Stashed changes:style/fansite1.css
 h2{
     text-align: center;
 }
@@ -144,56 +133,12 @@ a {
 }
 hr{
     color: white;
-    margin: 40px 0;
+    margin: 0px 0;
     border: white solid 2px;
 }
 li{
     margin: 20px;
 }
-<<<<<<< Updated upstream:fansite1.css
-.contenaire_presentation{
-    display: flex;
-}
-#presentation {
-    font-family: 'Roboto', sans-serif; 
-    font-size: 18px; 
-    line-height: 1.6; 
-    color: #333; 
-    max-width: 800px; 
-    margin: 0 20px; 
-    padding: 5px 10px 5px 10px; 
-    background-color: #f9f9f9; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-}
-
-#presentation p {
-    margin-bottom: 20px; 
-}
-.img_presentation {
-    border-radius: 20px;
-    display: block; 
-    margin: 80px 20px; 
-    width: 600px;
-    height: 400px;
-}
-#section-actualite {
-    margin-top: 20px;
-    background-color: white; 
-    padding: 2px;
-    border-radius: 8px;
-}
-#section-realisations {
-    background-color: white; 
-    padding: 2px;
-    border-radius: 8px;
-    margin-top: 20px;
-    
-}
-#section-evenements {
-    margin-top: 20px;
-    background-color: white; 
-=======
 
 section hr{
     color: black;
@@ -205,7 +150,6 @@ section hr{
 #section-main {
     margin: 20px;
     background-color: whitesmoke; 
->>>>>>> Stashed changes:style/fansite1.css
     padding: 2px;
     border-radius: 8px;
 }
@@ -239,23 +183,7 @@ details summary {
 #palmares-container h3{
     text-align: left;
 }
-<<<<<<< Updated upstream:fansite1.css
-#photos-videos {
-    margin-top: 20px;
-    background-color: white; 
-    padding: 2px;
-    border-radius: 8px;
-}
-#liens {
-    margin-top: 20px;
-    background-color: white; 
-    padding: 2px;
-    border-radius: 8px;
-}
-#liens li{
-=======
 .liens li{
->>>>>>> Stashed changes:style/fansite1.css
     text-align: center;
     list-style: none;
 }
@@ -277,10 +205,6 @@ details summary {
     margin-bottom: 20px;
     text-align: center;
 }
-<<<<<<< Updated upstream:fansite1.css
-article {
-    font-size: 18px;
-=======
 .video_zizou{
     display: flex;
     justify-content: center;
@@ -289,7 +213,6 @@ article {
 .video_zizou iframe{
     width: 560;
     height: 315;
->>>>>>> Stashed changes:style/fansite1.css
 }
 img{
     width: 500px;
@@ -429,15 +352,12 @@ footer{
         padding: 10px; 
         box-sizing: border-box; 
     }
-<<<<<<< Updated upstream:fansite1.css
-=======
     summary:hover {
         background-color: black;
     }
->>>>>>> Stashed changes:style/fansite1.css
 
     /*----------------------------------------------------------------------------------------------------
-                                            Header
+                                            Main
     /*Header---------------------------------------------------------------------------------------------*/
     .container_accueil {
         height: 75vh;
@@ -467,10 +387,6 @@ footer{
         color: white;
         text-decoration: none;
     }
-
-    /*----------------------------------------------------------------------------------------------------
-                                            Main
-    /*Header---------------------------------------------------------------------------------------------*/
     section{
         margin: 0 20px;
     }
@@ -504,7 +420,7 @@ footer{
 
     /*----------------------------------------------------------------------------------------------------
                                             Footer
-    /*Header---------------------------------------------------------------------------------------------*/
+    /*---------------------------------------------------------------------------------------------------*/
     .nav_footer {
         padding: 0;
         flex-direction: column; 
