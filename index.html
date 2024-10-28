@@ -7,23 +7,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<<<<<<< Updated upstream
     <link rel="stylesheet" href="fansite1.css">
+=======
+    <link rel="manifest" href="manifest.json" />
+
+    <link rel="stylesheet" href="style/index.css">
+>>>>>>> Stashed changes
     <title>FanSite</title>
 </head>
 
 <body>
     <header>
+
+        <!--Nav pour ecrans min 1386px-->
         <div class="nav_header">
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="fansite1.html">Zinedine Zidane</a></li>
+                    <li class="deroulant"><a href="fansite1.html">Zinedine Zidane</a>
+                        <ul class="sous-menu">
+                            <li><a href="fansite1.html#presentation">Présentation</a></li>
+                            <li><a href="fansite1.html#actualité">Actualité</a></li>
+                            <li><a href="fansite1.html#palmares-container">Palmarès</a></li>
+                            <li><a href="fansite1.html#oeuvres_caritatives">Œuvres caritatives</a></li>
+                            <li><a href="fansite1.html#contenair_gallery">Photos et Vidéos</a></li>
+                            <li><a href="fansite1.html#contenair_liens">Liens</a></li>
+                        </ul>
+                    </li>
                     <li><a href="fansite2.html">Indochine</a></li>
-                    <li><a href="fansite3.html">Angelina Jolie</a></li>
+                    <li class="deroulant"><a href="fansite3.html">Angelina Jolie</a>
+                        <ul class="sous-menu">
+                            <li><a href="fansite3.html#presentation">Présentation</a></li>
+                            <li><a href="fansite3.html#actualité">Actualité</a></li>
+                            <li><a href="fansite3.html#réalisations">Réalisations</a></li>
+                            <li><a href="fansite3.html#événements">Evénements</a></li>
+                            <li><a href="fansite3.html#photos-videos">Photos</a></li>
+                            <li><a href="fansite3.html#liens">Liens</a></li>
+                        </ul>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
+
+        <!--Nav pour petits écrans max 1386px-->
         <details class="hamburger">
             <summary>
                 <div class="bar"></div>
@@ -43,22 +71,36 @@
     </header>
 
     <main>
-        <h1>Bienvenue sur notre site de fans !</h1>
-        <section>
-            <h2><a href="fansite1.html">Zinedine Zidane</a></h2>
-            <p>Zinedine Zidane, surnommé "Zizou", est l'une des légendes du football mondial.
-                Né le 23 juin 1972 à Marseille, il a captivé le cœur des fans de football par
-                son incroyable talent,
-                son élégance sur le terrain et sa personnalité charismatique.</p>
-        </section>
-        <section>
-            <h2>Célébrité 2</h2>
-            <p>Présentation de la célébrité 2.</p>
-        </section>
-        <section>
-            <h2>Célébrité 3</h2>
-            <p>Présentation de la célébrité 3.</p>
-        </section>
+        <h1>Communauté Fan</h1>
+        <div class="accueil">
+            <div class="contenaire">
+                <a href="fansite1.html">
+                    <h2>Zinedine Zidane</h2>
+                    <section class="Zizou">
+
+
+                    </section>
+                </a>
+            </div>
+            <div class="contenaire">
+                <a href="fansite2.html">
+                    <h2>Indochine</h2>
+                    <section class="Indochine">
+
+
+                    </section>
+                </a>
+            </div>
+            <div class="contenaire">
+                <a href="fansite3.html">
+                    <h2>Angelina_Jolie</h2>
+                    <section class="Angelina_Jolie">
+
+
+                    </section>
+                </a>
+            </div>
+        </div>
     </main>
 
     <footer>

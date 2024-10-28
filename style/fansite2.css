@@ -1,0 +1,431 @@
+
+
+/* Variables*/
+:root {
+    --rouge_indochine : #fe0000;
+    --typo_titre : Kaushan Script;
+    --typo_corps :  Calibri;
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------
+Règles générales */
+
+body {
+    background-color: var(--rouge_indochine);
+    font-family: var(--typo_corps);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    align-self: center;
+}
+
+h2 {
+    margin: 3% 0 3% 0;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: var(--typo_titre);
+}
+
+.actualite, .agenda, .discographie, .galerie, .liens-externes {
+    margin: 10% 3% 10% 13%;
+    border: 15px solid black;
+    box-shadow: 15px 15px 10px rgb(36, 36, 36);   
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------- 
+style de la section PRESENTATION */
+
+.presentation {
+    margin: 10% 3% 10% 13%;
+    text-align: center;
+
+    h1 {
+        font-size: 60px;
+        font-family: var(--typo_titre);
+    }
+
+    .presentation-article {
+        font-size: 35px;
+    }
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------- 
+style de la section ACTUALITE */
+
+.actualite {
+
+    .actualite-article {
+        margin: 0 3% 3% 9%;
+
+        article {
+            margin: 0 3% 3% 3%;
+        }
+    }
+
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------
+style de la section EVENEMENTS A VENIR */
+
+.agenda {
+
+    .introduction {
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 3%;
+    }
+
+    .list-concert {
+        margin: 0 3% 3% 3%;
+        font-weight: bolder;
+        font-size: 25px;
+
+        .concert {
+            background-color: #fcfaa2;
+            border: thick double black;
+            margin-top: 3%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .billets {
+                align-self: center;
+            }
+        }
+
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .agenda {
+        .list-concert {
+            font-size: 10px;
+        }
+    }
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------
+style de la section DISCOGRAPHIE,
+mosaique avec pochette album,
+superposer à la pochette le titre de l'album et le logo spotify */
+
+.discographie {
+    font-size: 20px;
+    font-weight: bolder;
+
+    .list-album {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+
+        .album1, .album2, .album3, .album4, .album5, .album6, .album7, .album8, .album9, .album10, .album11, .album12, .album13, .album14 {
+            width: 300px;
+            height: 300px;
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+    
+        .album1 {
+            background-image: url(img/indochine/Album/aventurier.png);
+        }
+    
+        .album2 {
+            background-image: url(img/indochine/Album/péril-jaune.png);
+        }
+    
+        .album3 {
+            background-image: url(img/indochine/Album/3.png);
+        }
+    
+        .album4 {
+            background-image: url(img/indochine/Album/7000.png);
+        }
+    
+        .album5 {
+            background-image: url(img/indochine/Album/baiser.png);
+        }
+    
+        .album6 {
+            background-image: url(img/indochine/Album/un-jour.png);
+        }
+    
+        .album7 {
+            background-image: url(img/indochine/Album/wax.png);
+        }
+    
+        .album8 {
+            background-image: url(img/indochine/Album/danceteria.png);
+        }
+    
+        .album9 {
+            background-image: url(img/indochine/Album/paradize.png);
+        }
+    
+        .album10 {
+            background-image: url(img/indochine/Album/alice-june.png);
+        }
+    
+        .album11 {
+            background-image: url(img/indochine/Album/republique.png);
+        }
+    
+        .album12 {
+            background-image: url(img/indochine/Album/black-city.png);
+        }
+    
+        .album13 {
+            background-image: url(img/indochine/Album/13.png);
+        }
+    
+        .album14 {
+            background-image: url(img/indochine/Album/babel.png);
+        }
+
+        .com-album {
+            height: 45px;
+            width: 270px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: #fcfaa2;
+            border: 5px solid black;
+    
+            .lien-spotify {
+                position: relative;
+            }
+            
+            .img-logo {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .discographie {
+        font-size: 15px;
+
+        .list-album {
+            .album1, .album2, .album3, .album4, .album5, .album6, .album7, .album8, .album9, .album10, .album11, .album12, .album13, .album14 {
+                width: 250px;
+                height: 250px;
+            }
+    
+            .com-album {
+                width: 230px;
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------------------------
+style de la section DES PHOTOS, DES VIDEOS
+mosaique sans gap */
+
+.galerie {
+
+    .groupe {
+        padding: 0 10% 10% 10%;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        iframe, img {
+            height: 250px;
+            padding: 2px 2px 2px 2px;
+        }
+        iframe{
+            width: 440px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .galerie {
+        .groupe {
+            iframe {
+                width: 100%;
+            }
+            
+            iframe, img {
+                height: 150px;
+            }
+        }
+    }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------
+style de la section LIENS EXTERNES */
+
+.liens-externes {
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+
+    .reseau {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 20px 0 20px 0;
+    }
+
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------
+style de la section MENU
+c'est un menu fixe dans le page qui permet de naviguer
+entre les différentes parties de la fanpage
+lors de la navigation sur mobile : format menu burger (https://codepen.io/SteeveDroz/pen/vPXvXj) */
+
+.menu-indo {
+
+    border: 15px solid #faff07;
+    background-color: #fcfaa2;
+    font-family: Kaushan Script;
+    box-shadow: 15px 15px 10px rgb(36, 36, 36);
+    position: fixed;
+    left: 2%;
+    top: 10%;
+
+    .menu-liste {
+        list-style-type: none;
+        width: 200px;
+    }
+
+    #cheeseburger, #cheeseburger-logo {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .menu-indo {
+        #cheeseburger {
+            display: none;
+        }
+    
+        #cheeseburger-logo {
+            cursor: pointer;
+            display: block;
+            color: black;
+            text-align: right;
+            font-weight: bold;
+            font-size: 23px;
+            width: 30px;
+            text-align: center;
+    
+        }
+    
+        .menu-liste {
+            display: none;
+        }
+    
+        #cheeseburger:checked ~ .menu-liste {
+            display: block;
+            width: 200px;
+        }
+    }
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+style du header */
+
+header{
+    background-color: black;
+}
+.nav_header{
+    text-align: center;  
+    padding: 20px 0;     
+    border-top: 2px solid black; 
+}
+.nav_header nav ul {
+    list-style-type: none; 
+    padding: 0;           
+    margin: 0;            
+    display: inline-flex; 
+}
+.nav_header nav li {
+    margin-right: 60px; 
+}
+
+.nav_header nav li:last-child {
+    margin-right: 0; 
+}
+.nav_header a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav_header a:hover{
+    color: gray;
+    font-size: 30px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------
+style du footer */
+
+footer{
+    background-color: black;
+}
+.nav_footer {
+    text-align: center;  
+    padding: 20px 0;     
+    border-top: 2px solid black; 
+}
+
+.nav_footer nav ul {
+    list-style-type: none; 
+    padding: 0;           
+    margin: 0;            
+    display: inline-flex; 
+}
+
+.nav_footer nav li {
+    margin-right: 60px; 
+}
+
+.nav_footer nav li:last-child {
+    margin-right: 0; 
+}
+.nav_footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav_footer h3 {
+    margin-top: 20px;
+    font-size: 14px;  
+    color: black;      
+}
+.nav_footer a:hover{
+    color: gray;
+    font-size: 25px;
+}

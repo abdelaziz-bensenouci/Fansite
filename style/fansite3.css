@@ -1,0 +1,438 @@
+
+/*Mediaqueries ---------------------------------------------------------------------------*/
+@media (max-width: 600px) {
+  .hamburger {
+    margin: 20px 20px;
+}
+.bar{
+    margin: 5px;
+}
+.nav_header {
+    display: none; 
+}
+.nav {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 5px; 
+    margin: 0; 
+    gap: 10px; 
+    width: 100%; 
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    width: 100%; 
+    text-align: center;
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+summary:hover {
+    background-color: black;
+}
+  h1 {
+    font-size: 2rem;         
+    margin-bottom: 20px;     
+  }
+
+  h2 {
+    font-size: 1.5rem;       
+  }
+
+  p, .points li {
+    font-size: 1rem;         
+  }
+
+  .content {
+    flex-direction: column;  
+    align-items: center;     
+  }
+  #image img {
+    max-width: 80%;             
+    height: auto;            
+    margin: 10px auto;          
+    display: block;
+  }
+  .btn {
+    padding: 8px 16px;       
+    text-align: center;
+    max-width: auto;
+    text-align: center;
+  }
+  .logos ul {
+    gap: 10px;              
+  }
+
+  .img_logo {
+    width: 40px;             
+  }
+  .video {
+    width: 100%;             
+    padding-bottom: 56.25%;  
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+  .photo-gallery {
+    justify-content: center; 
+    gap: 10px;               
+  }
+
+  .photo-gallery img {
+    width: 100%;             
+    max-width: 100%;         
+  }
+  .nav_footer{
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hamburger{
+    display: none;
+}
+  h1 {
+    font-size: 3rem;       
+  }
+
+  h2 {
+    font-size: 2rem;         
+  }
+
+  p, .points li {
+    font-size: 1.2rem;      
+  }
+
+  .content {
+    padding: 0 20px;         
+    gap: 30px;               
+  }
+  #image img {
+    width: 400px;           
+    height: auto;            
+  }
+  .photo-gallery img {
+    width: calc(20% - 10px); 
+  }
+
+  .video {
+    width: 60%;              
+  }
+
+  .img_logo {
+    width: 60px;             
+  }
+}
+
+/* Header -------------------------------------------------------------------------------------------------------*/
+header {
+  background-color: black;
+}
+.nav_header {
+  text-align: center;
+  border-top: 2px solid black;
+}
+.nav_header li {
+  position: relative;
+  display: inline-block;
+}
+.nav_header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.nav_header nav li {
+  margin-right: 60px;
+}
+.nav_header a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  display: block;
+}
+.nav_header a:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  transition: 0.5s;
+}
+.bar {
+  height: 4px;
+  width: 30px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.sous-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.sous-menu li {
+  padding: 10px 10px;
+  display: block;
+  text-align: left;
+}
+.sous-menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.deroulant:hover .sous-menu {
+  display: block;
+  padding: 0;
+  font-size: 5px;
+  opacity: 0.9;
+}
+
+
+/* Footer -------------------------------------------------------------------------------------------------------*/
+footer{
+  background-color: black;
+}
+.nav_footer {
+  text-align: center;  
+  padding: 20px 0;     
+  border-top: 2px solid black; 
+}
+
+.nav_footer nav ul {
+  list-style-type: none; 
+  padding: 0;           
+  margin: 0;            
+  display: inline-flex; 
+}
+
+.nav_footer nav li {
+  margin-right: 60px; 
+}
+
+.nav_footer nav li:last-child {
+  margin-right: 0; 
+}
+.nav_footer a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.nav_footer h3 {
+  margin-top: 20px;
+  font-size: 14px;  
+  color: black;      
+}
+.nav_footer a:hover{
+  color: gray;
+  font-size: 25px;
+}
+
+/*feuille angelina jolie-------------------------------------------------------------------------*/
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: "Pacifico", cursive;
+}
+
+/* Box pour toutes les sections */
+section {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  position: relative;
+}
+/*points*/
+.points ul {
+  list-style-type: disc; 
+  padding-left: 20px; 
+  margin-top: 10px;
+}
+
+.points li {
+  display: block;
+  margin-bottom: 10px; 
+  font-size: 16px; 
+  color: #333; 
+}
+
+/* .content (mettre les divs côte à côte) */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Pour que la div image soit en dehors de la box */
+#image img {
+  width: 300px;
+  height: auto;
+  margin-left: 20px; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-top: 20px;
+
+}
+
+#image img:hover {
+  transform: scale(1.1); 
+}
+
+.text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+/* Pour que la vidéo soit à côté du texte */
+.content {
+  display: flex;
+  margin-left: 20px;
+  top: -20px; 
+  position: relative;
+}
+
+.video {
+  position: relative;
+  width: 45%; 
+  padding-bottom: 28.125%; 
+  height: 0; 
+  overflow: hidden; 
+  background: #000; 
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; 
+}
+
+
+/* Galerie de photos */
+.photo-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.photo-gallery img {
+  width: calc(25% - 10px); 
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.1); 
+}
+/* Liens de réseaux sociaux */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #007BFF;
+}
+
+ul li a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+/*logos---------------------------*/
+.logos {
+  text-align: center; 
+  padding: 20px; 
+}
+
+.logos ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0;
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.logos li {
+  display: inline-block; 
+}
+
+.img_logo {
+  width: 50px; 
+  height: auto; 
+}
+.img_logo:hover {
+  transform: scale(1.1); 
+}
+
+
+
+/* Style général pour rendre l'apparence plus propre */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #D5B1B1;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin: 0;          
+  padding: 10px 0;
+}
+
+h2 {
+  color: #333;
+}
+.titrelogo {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #45a049;
+  transform: scale(1.1); 
+}
+.image{
+  margin: 20px 20px;
+}

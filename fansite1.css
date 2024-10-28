@@ -5,10 +5,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column; 
-}
-h1{
-    text-align: center;
-    margin-top: 50px;
+
 }
 
 /*-------------------------------------------------------------------------------------------------------
@@ -19,27 +16,27 @@ header {
 }
 .nav_header {
     text-align: center;
-    padding: 20px 0;
     border-top: 2px solid black;
 }
-
+.nav_header li {
+    position: relative;
+    display: inline-block;
+}
 .nav_header nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: inline-flex;
 }
-
 .nav_header nav li {
     margin-right: 60px;
 }
-
 .nav_header a {
     text-decoration: none;
     color: white;
     font-size: 20px;
+    padding: 10px 15px;
+    display: block;
 }
-
 .nav_header a:hover {
     color: white;
     font-size: 30px;
@@ -51,20 +48,47 @@ header {
     background-color: white;
     transition: all 0.3s ease;
 }
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.sous-menu li {
+    display: block;
+    text-align: left;
+}
+.sous-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.deroulant:hover .sous-menu {
+    display: block;
+    padding: 0;
+    font-size: 5px;
+    opacity: 0.9;
+}
 
 /*-------------------------------------------------------------------------------------------------------
                                             Main
 -------------------------------------------------------------------------------------------------------*/
 main{
     flex: 1; 
-    
-    
 }
 .contenaire_main{
     background-image: url(img/zinedine/stade3-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+<<<<<<< Updated upstream:fansite1.css
 }
 .h1_zidane{
     font-size: 48px;
@@ -73,20 +97,60 @@ main{
     margin: 0;
     padding: 30px;
 }
+=======
+}
+.container_accueil{
+    background-image: url(../img/zinedine/zinedine5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 38vh;
+}
+.container_accueil a{
+    text-decoration: none;
+}
+.h1_zidane {
+    background-color: #007BFF;
+    margin-left: auto;
+    margin-right: auto; 
+    font-size: 2rem; 
+    text-align: center;       
+    color: black; 
+    border-radius: 20px;
+    max-width: 30%;
+    margin-top: 40vh; 
+}
+.h1_zidane:hover{
+    background-color: white;
+    font-size: 30px;
+    transition: 0.5s;
+}
+>>>>>>> Stashed changes:style/fansite1.css
 h2{
     text-align: center;
 }
 h3 {
     text-align: center; 
 }
+article {
+    margin:30px 50px;
+    font-size: 20px;
+}
+.source{
+    margin: 30px 50px;
+}
+a {
+    text-decoration: none;
+}
 hr{
     color: white;
     margin: 40px 0;
     border: white solid 2px;
 }
-section{
-    margin: 0 20px;
+li{
+    margin: 20px;
 }
+<<<<<<< Updated upstream:fansite1.css
 .contenaire_presentation{
     display: flex;
 }
@@ -129,6 +193,19 @@ section{
 #section-evenements {
     margin-top: 20px;
     background-color: white; 
+=======
+
+section hr{
+    color: black;
+    border: black solid 1px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#section-main {
+    margin: 20px;
+    background-color: whitesmoke; 
+>>>>>>> Stashed changes:style/fansite1.css
     padding: 2px;
     border-radius: 8px;
 }
@@ -144,20 +221,25 @@ summary {
 summary:hover {
     background-color: #007BFF;
 }
-.palmares-container {
+details summary {
+    list-style: none;
+}
+#palmares-container {
     display: flex;
     justify-content: space-between; 
     margin-top: 20px;
 }
 .palmares-entraineur, .palmares-joueur {
+    margin: 50px;
     width: 48%; 
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ccc; 
     border-radius: 4px; 
 }
-.palmares-container li{
-    margin-left: 20%;
+#palmares-container h3{
+    text-align: left;
 }
+<<<<<<< Updated upstream:fansite1.css
 #photos-videos {
     margin-top: 20px;
     background-color: white; 
@@ -171,6 +253,9 @@ summary:hover {
     border-radius: 8px;
 }
 #liens li{
+=======
+.liens li{
+>>>>>>> Stashed changes:style/fansite1.css
     text-align: center;
     list-style: none;
 }
@@ -186,22 +271,25 @@ summary:hover {
     display: flex; 
     justify-content: center; 
 }
-.contenair_carriere1{
-    display: flex;
-    justify-content:center;
-}
-li{
-    margin: 20px;
-}
-#photos-videos h2{
-    text-align: center;
-}
 .videos_zidane {
+    margin-right: 20px;
     margin-top: 80px;
+    margin-bottom: 20px;
     text-align: center;
 }
+<<<<<<< Updated upstream:fansite1.css
 article {
     font-size: 18px;
+=======
+.video_zizou{
+    display: flex;
+    justify-content: center;
+}
+
+.video_zizou iframe{
+    width: 560;
+    height: 315;
+>>>>>>> Stashed changes:style/fansite1.css
 }
 img{
     width: 500px;
@@ -303,40 +391,6 @@ footer{
 }
 
 /*-------------------------------------------------------------------------------------------------------
-                                            PAGE CONTACT
--------------------------------------------------------------------------------------------------------*/
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 40px auto; 
-}
-
-label {
-    margin-top: 10px;
-}
-
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3; 
-}
-
-/*-------------------------------------------------------------------------------------------------------
                                             Media queries
 -------------------------------------------------------------------------------------------------------*/
 @media (min-width: 1386px) {
@@ -350,7 +404,10 @@ button:hover {
                                             Header
     /*Header---------------------------------------------------------------------------------------------*/
     .hamburger {
-        margin: 20px 20px;
+        margin: 35px 20px;
+    }
+    .bar{
+        margin: 5px;
     }
     .nav_header {
         display: none; 
@@ -372,16 +429,35 @@ button:hover {
         padding: 10px; 
         box-sizing: border-box; 
     }
+<<<<<<< Updated upstream:fansite1.css
+=======
+    summary:hover {
+        background-color: black;
+    }
+>>>>>>> Stashed changes:style/fansite1.css
 
     /*----------------------------------------------------------------------------------------------------
                                             Header
     /*Header---------------------------------------------------------------------------------------------*/
+    .container_accueil {
+        height: 75vh;
+        padding: 10vh; 
+    }
+    
     .contenaire_presentation{
         display: flex;
         flex-direction: column;
     }
-    .img_presentation{
-        max-width: 90%;
+    .h1_zidane{
+        margin-top: 60vh;
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        max-width: 40%;
+    }
+    .h1_zidane:hover{
+        background-color: #007BFF;
+        font-size: 20px; 
+        transition:none;
     }
     .close {
         position: absolute;
@@ -398,6 +474,15 @@ button:hover {
     section{
         margin: 0 20px;
     }
+    #palmares-container{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery   {
+        display: flex;
+        flex-direction: column;
+    } 
     img{
         width: 250px;
         height: 150px;
@@ -408,8 +493,14 @@ button:hover {
         height: 300px;
     }
     .vid_zidane {
-        max-width: 90%;
+        max-width: 100%;
     }
+    .video_zizou{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
 
     /*----------------------------------------------------------------------------------------------------
                                             Footer
@@ -426,13 +517,5 @@ button:hover {
     }
     .nav_footer a {
         font-size: 15px;
-    }
-     
-
-    /*----------------------------------------------------------------------------------------------------
-                                            Contact
-    /*Header---------------------------------------------------------------------------------------------*/
-    form {
-        max-width: 90%; 
     }   
 }

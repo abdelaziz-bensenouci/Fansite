@@ -4,114 +4,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="fansite3.css">
-  <title>fansite</title>
+  <link rel="stylesheet" href="style/fansite3.css">
+  <title>Angelina Jolie-Fansite</title>
 </head>
 
 <body>
+  <!--------------la barre de navigation---------------------------------------------------------------->
   <header>
     <div class="nav_header">
       <nav>
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="fansite1.html">Zinedine Zidane</a></li>
+          <li class="deroulant"><a href="fansite1.html">Zinedine Zidane</a>
+            <ul class="sous-menu">
+              <li><a href="fansite1.html#presentation">Présentation</a></li>
+              <li><a href="fansite1.html#actualité">Actualité</a></li>
+              <li><a href="fansite1.html#palmares-container">Palmarès</a></li>
+              <li><a href="fansite1.html#oeuvres_caritatives">Œuvres caritatives</a></li>
+              <li><a href="fansite1.html#contenair_gallery">Photos et Vidéos</a></li>
+              <li><a href="fansite1.html#contenair_liens">Liens</a></li>
+            </ul>
+          </li>
           <li><a href="fansite2.html">Indochine</a></li>
-          <li><a href="fansite3.html">Angelina Jolie</a></li>
+          <li class="deroulant"><a href="fansite3.html">Angelina Jolie</a>
+            <ul class="sous-menu">
+              <li><a href="#presentation">Présentation</a></li>
+              <li><a href="#actualité">Actualité</a></li>
+              <li><a href="#réalisations">Réalisations</a></li>
+              <li><a href="#événements">Evénements</a></li>
+              <li><a href="#photos-videos">Photos</a></li>
+              <li><a href="#liens">Liens</a></li>
+            </ul>
+          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
+    <details class="hamburger">
+      <summary>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </summary>
+      <nav class="navbar">
+        <div class="nav">
+          <a href="index.html">Accueil</a>
+          <a href="fansite1.html">Zinedine Zidane</a>
+          <a href="fansite2.html">Indochine</a>
+          <a href="fansite3.html">Angelina Jolie</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </details>
   </header>
+  </header>
+  <!----------------------section principale-------------------------------------------------------------->
   <main>
-    <section>
-      <article>
-        <h2>Présentation</h2>
-        <p>Angelina Jolie est une actrice et réalisatrice américaine, reconnue pour son talent et son engagement
-          humanitaire.</p>
-      </article>
+    <section id="presentation">
+      <div class="titre">
+        <h1>Angelina Jolie</h1>
+      </div>
+      <div class="présentation">
+        <h 2>Présentation</h2>
+          <p>Angelina Jolie est une actrice, réalisatrice et militante humanitaire américaine, célèbre pour ses rôles
+            dans des films à succès tels que Tomb Raider et Mr. & Mrs. Smith. Lauréate de plusieurs prix prestigieux,
+            dont un Oscar, elle est également reconnue pour son engagement envers les causes humanitaires, en
+            particulier en tant qu'ambassadrice pour les réfugiés des Nations Unies. Mère de six enfants, elle allie
+            avec succès sa carrière artistique et son travail philanthropique. Jolie continue d'inspirer à travers ses
+            performances à l'écran et ses actions en faveur des droits de l'homme.</p>
+      </div>
     </section>
   </main>
+  <!--------------------section actualité---------------------------------------------------------------->
   <section id="actualité">
     <h2>Actualité</h2>
     <div class="content">
       <div class="text">
         <p>Angelina Jolie a récemment participé à un événement pour promouvoir les droits des réfugiés et a annoncé la
           sortie de son prochain film, qui aborde des thèmes sociaux importants.</p>
+        <!-----------un boutton qui mene vers un site-------------------------------------------------------->
+        <a href="https://www.unhcr.org/angelina-jolie" class="btn" target="_blank">Learn More About Her Humanitarian
+          Work</a>
       </div>
+      <!--------------------image angelina jolie-------------------------------------------------->
       <div id="image">
         <img src="img/angelina_jolie/R.jfif" alt="image5">
       </div>
     </div>
   </section>
-
+  <!-------------------------section réalisations----------------------------------------------------------->
   <section id="réalisations">
     <h2>Réalisations</h2>
-    <p>Angelina Jolie a joué dans de nombreux films à succès, notamment :</p>
-    <ul>
-      <li>Malificent (2014)</li>
-      <li>Mr &Mrs Smith (2005)</li>
-      <li>Tomb Raider (2001)</li>
-      <li>Interrupted (1999)</li>
-      </u1>
+    <div class="content">
+      <div class="text">
+        <p>Angelina Jolie a joué dans de nombreux films à succès, notamment :</p>
+        <div class="points">
+          <ul>
+            <li>Malificent (2014)</li>
+            <li>Mr & Mrs Smith (2005)</li>
+            <li>Tomb Raider (2001)</li>
+            <li>Interrupted (1999)</li>
+          </ul>
+        </div>
+        <!---------------------une video d'un trailer de film----------------------------------------->
+      </div>
       <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/5XtbLezJtMg?si=3LNXjP0z3xO0bxlP"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
       </div>
+    </div>
   </section>
-
+  <!-----------------------section evenements------------------------------------------------------------>
   <section id="événements">
     <h2>Evenements passés/à venir</h2>
-    <p>Angelina Jolie participera à un événement caritatif en faveur des droits de l'homme en décembre 2024. Elle a
-      également été vue lors de plusieurs événements de collecte de fonds pour ses œuvres humanitaires.</p>
+    <p>Angelina Jolie participera à un événement caritatif en décembre 2024, dédié à la défense des droits de l'homme.
+      Récemment, elle a assisté à plusieurs collectes de fonds pour soutenir les réfugiés et les victimes de conflits à
+      travers le monde. Jolie est souvent impliquée dans des campagnes humanitaires, utilisant sa notoriété pour
+      sensibiliser le public. Son engagement continu envers des causes sociales montre son dévouement à faire une
+      différence au-delà du cinéma.</p>
   </section>
-
+  <!---------------------section gallery de photos---------------------------------------->
   <section id="photos-videos">
-    <h2>Photos et Vidéos</h2>
-    <p>Voici quelques photos d'Angelina Jolie :</p>
+    <h2>Photos</h2>
     <div class="photo-gallery">
       <img src="img/angelina_jolie/1.jfif" alt="image1">
       <img src="img/angelina_jolie/5.jfif" alt="image5">
       <img src="img/angelina_jolie/6.jfif" alt="image6">
       <img src="img/angelina_jolie/7.jfif" alt="image7">
     </div>
-    <p>Pour voir plus de vidéos, vous pouvez consulter sa chaine Youtube officielle.</p>
   </section>
-
+  <!-------------------liens vers des sites de fan------------------------------------------>
   <section id="liens">
     <h2>Liens vers d'autres sites de fans</h2>
     <u1>
       <li><a href="https://angelina-jolie.com/gallery/" target="_blank">Site Officiel d'Angelina Jolie</a></li>
       <li><a href="https://www.facebook.com/groups/820216949501240/" target="_blank">Fan Club d'Angelina Jolie</a></li>
     </u1>
-    <h2>Liens vers les réseaux sociaux</h2>
-    <u1>
-      <li><a
-          href="https://www.bing.com/ck/a?!&&p=ce0101b0b26f18843f9620b25c2f0d1699ef7bf09b46d9e05f596f9a24283896JmltdHM9MTcyOTU1NTIwMA&ptn=3&ver=2&hsh=4&fclid=2a23de9d-f182-6267-084b-cc77f0e96390&psq=lien+de+facebook+de+angelina+jolie&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2dyb3Vwcy9hbmdlbGluYWpvbGllb2ZmaWNpYWwv&ntb=1"
-          target="_blank">Facebook</a></li>
-      <li><a
-          href="https://www.bing.com/ck/a?!&&p=16e22896058ef964a826efca3a621947acbc6a2381050f17253c401d4948dff6JmltdHM9MTcyOTU1NTIwMA&ptn=3&ver=2&hsh=4&fclid=2a23de9d-f182-6267-084b-cc77f0e96390&psq=instagram+angelina+jolie&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9hbmdlbGluYWpvbGllLw&ntb=1"
-          target="_blank">Instagram</a></li>
-      <li><a
-          href="https://www.bing.com/ck/a?!&&p=c24f73a0b77d6928d30d59cd12a60a06120c69441888adde3ae7c41f07f90e73JmltdHM9MTcyOTU1NTIwMA&ptn=3&ver=2&hsh=4&fclid=2a23de9d-f182-6267-084b-cc77f0e96390&psq=twitter+de+angelina+jolie&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS9BbmdpZUpvbGllTGl2ZS93aXRoX3JlcGxpZXM&ntb=1"
-          target="_blank">Twitter</a></li>
-    </u1>
+    <div class="titrelogo">
+      <h2>Liens vers les réseaux sociaux</h2>
+      <!---------------------logos qui mene vers les liens des resaux sociaux de la celebrité----------------->
+    </div>
+    <div class="logos">
+      <ul>
+        <li><a href="https://www.facebook.com/angelina">
+            <img src="img/logo/facebook.png" class="img_logo" alt="Facebook Logo"></a></li>
+        <li><a href="https://www.instagram.com/angelina">
+            <img src="img/logo/instagram.png" class="img_logo" alt="Instagram Logo"></a></li>
+        <li><a href="https://www.twitter.com/angelina">
+            <img src="img/logo/twitter.png" class="img_logo" alt="Twitter Logo"></a></li>
+      </ul>
+    </div>
   </section>
-  </main>
-
+  <!----------------footer--------------------------------------------------------------------------------->
   <footer>
     <div class="nav_footer">
       <nav>
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="fansite1.html">Zinedine Zidane</a></li>
-          <li><a href="fansite2.html">Indochine</a></li>
+          <li><a href="fansite2.html">Indochien</a></li>
           <li><a href="fansite3.html">Angelina Jolie</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <h3>Copyright by Aicha 2024</h3>
+      <h3>Copyright by Abdelaziz 2024</h3>
     </div>
   </footer>
 </body>

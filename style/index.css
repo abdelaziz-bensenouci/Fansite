@@ -1,0 +1,244 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black; 
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*-------------------------------------------------------------------------------------------------------
+                                            HEADER
+-------------------------------------------------------------------------------------------------------*/
+header {
+    background-color: black;
+}
+.nav_header {
+    text-align: center;
+    border-top: 2px solid black;
+}
+.nav_header li {
+    position: relative;
+    display: inline-block;
+}
+.nav_header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav_header nav li {
+    margin-right: 60px;
+}
+.nav_header a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    display: block;
+}
+.nav_header a:hover {
+    color: white;
+    font-size: 30px;
+    transition: 0.5s;
+}
+.bar {
+    height: 4px;
+    width: 30px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.sous-menu li {
+    padding: 10px 10px;
+    display: block;
+    text-align: left;
+}
+.sous-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.deroulant:hover .sous-menu {
+    display: block;
+    padding: 0;
+    font-size: 5px;
+    opacity: 0.9;
+}
+
+/*-------------------------------------------------------------------------------------------------------
+                                            Main
+-------------------------------------------------------------------------------------------------------*/
+main{
+    flex: 1; 
+}
+.accueil{
+    margin: 0 20px 70px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+h1{
+    font-family: "Roboto", sans-serif,;
+letter-spacing: 3px;
+    color: white;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    font-size: 20px;
+    transition: 0.5;
+}
+section{
+    width: 350px;
+    height: 450px;
+}
+.Zizou{
+    background-image: url(../img/zinedine/zinedine5.jpg);
+    background-position: center;
+}
+.Indochine{
+    background-image: url(../img/indochine/indochine-aventurier.jpg);
+}
+.Angelina_Jolie{
+    background-image: url(../img/angelina_jolie/5.jfif);
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------
+                                            FOOTER
+-------------------------------------------------------------------------------------------------------*/
+footer{
+    background-color: black;
+}
+.nav_footer {
+    text-align: center;  
+    padding: 10px 0;     
+    border-top: 2px solid black; 
+}
+
+.nav_footer nav ul {
+    list-style-type: none; 
+    padding: 0;           
+    margin: 0;            
+    display: inline-flex; 
+}
+.nav_footer nav li {
+    margin-right: 60px; 
+}
+
+.nav_footer nav li:last-child {
+    margin-right: 0; 
+}
+.nav_footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav_footer a:hover{
+    color: white;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.nav_footer h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 14px; 
+    color: white; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+/*-------------------------------------------------------------------------------------------------------
+                                            Media queries
+-------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1386px) {
+    .hamburger{
+        display: none;
+    }
+}
+
+@media (max-width: 1385px) {
+    /*----------------------------------------------------------------------------------------------------
+                                            Header
+    /*Header---------------------------------------------------------------------------------------------*/
+    .hamburger {
+        margin: 20px 20px;
+    }
+    .bar{
+        margin: 5px;
+    }
+    .nav_header {
+        display: none; 
+    }
+    .nav {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        padding: 5px; 
+        margin: 0; 
+        gap: 10px; 
+        width: 100%; 
+    }
+    .nav a {
+        color: white;
+        text-decoration: none;
+        width: 100%; 
+        text-align: center;
+        padding: 10px; 
+        box-sizing: border-box; 
+    }
+
+    /*----------------------------------------------------------------------------------------------------
+                                            Main
+    /*---------------------------------------------------------------------------------------------------*/
+    .accueil{
+        margin: 0 20px 70px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .contenaire {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top:60px;
+    }
+    
+    /*----------------------------------------------------------------------------------------------------
+                                            Footer
+    /*--------------------------------------------------------------------------------------------------*/
+    .nav_footer {
+        padding: 0;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: left; 
+    }
+
+    .nav_footer nav ul {
+        flex-direction: column; 
+    }
+    .nav_footer a {
+        font-size: 15px;
+    }
+}
